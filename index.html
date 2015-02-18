@@ -18,8 +18,11 @@
 <div>
 Welcome to my Website
 </div>
+<img 
+  srcset="images/espn-1024.jpg 1024w, images/espn-300.jpg 300w"
+  src="images/espn-300.jpg"
+  alt="My responsive image" />
 </div>
-
 <div class="three-column-icons">
 <ul>
 <li><h5>Responsive</h5><span>We offer mobile first, responsive designs on all our websites.</span></li>
@@ -42,7 +45,14 @@ Welcome to my Website
 </div>
 
 <h5>The Blog</h5>
-
+<picture>
+  <source
+  	media="(min-width: 600px)"
+  	srcset="images/espn-1024.jpg">
+   <img 
+     src="images/espn-300.jpg"
+     alt="My Responsive Images">
+</picture>   
 <div>
 <h5>Magna tempus consequat lorem</h5>
 <p>Lorem ipsum</p>
